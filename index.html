@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+			#overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-size: 16px;
+            z-index: 1000;
+        }
+        .patreon-button {
+    transform: translateX(-50%);
+    background-color: #FF424D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+		</style>
+	</head>
+	<body>
+    
+		<div id="overlay">
+			Just a weekend coding project making a browser based editor for my glb/gltf files. <br>
+			Click on parts of the model to select, use the delete key on your keyboard to remove and ctrl+z to undo if you deleted something by mistake <br>
+			Click and drag to orbit the camera, middle mouse to zoom and right-click to pan <br>
+			On the top-right you'll find a menu to swap models and a button to export an STL file, but for some reason the exported model is tiny <br>
+			so you'll need to scale it 100000% in your slicer to be the correct size. Not sure why *shrug* <br>
+			I'll have that to fix on another weekend 😅, until then enjoy the models 😁 <br>
+      And do let me know if you found this useful! <br>
+      <br>
+      <br>
+      <a href="https://www.patreon.com/PrintedEncounter" target="_blank" class="patreon-button">Support on Patreon</a>
+		</div> <!-- Overlay text -->
+    <div id="sceneContainer"></div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
